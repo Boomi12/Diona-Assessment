@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Medical & Travel Expense Request</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="demo-navbar">
+        <div class="demo-title">
+            Exercise 1
+        </div>
+
+        <div class="demo-actions">
+            <button
+                id="original-data-btn"
+                class="active"
+            >
+                Original
+            </button>
+
+            <button id="multi-data-btn">
+                Multi-row
+            </button>
+
+            <button id="print-btn">
+                Print PDF
+            </button>
+        </div>
+    </div>
+
+    <main id="document-container">
+
+        <section class="page">
+
+            <header class="document-header">
+
+                <div class="logo-section">
+
+                    <img
+                        src="assets/logo.png"
+                        alt="Workers Compensation Board of Manitoba"
+                        class="wcb-logo"
+                    >
+
+                </div>
+
+                <div class="address-section">
+                    <p>333 Broadway</p>
+                    <p>Winnipeg, MB R3C 4W3</p>
+                    <p>Phone: (204) 954-4321</p>
+                    <p>Toll Free: 1-855-954-4321</p>
+                    <p>wcb.mb.ca</p>
+                </div>
+
+                <div class="title-section">
+
+                    <h1>
+                        Medical & Travel Expense
+                        Request
+                    </h1>
+
+                    <div class="claim-box">
+                        Claim No.
+                        <span id="claim-number"></span>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <p class="intro-text">
+
+                <span id="worker-name"></span>
+
+                requested reimbursement for the following
+                medical and/or travel expenses:
+
+            </p>
+
+            <div id="page-one-content"></div>
+
+            <footer class="page-footer">
+
+                <span>
+                    Worker App ID:
+                    <span id="worker-app-id"></span>
+                </span>
+
+                <div class="footer-right">
+
+                    <span>
+                        Submitted:
+                        <span id="submitted-date"></span>
+                    </span>
+
+                    <span>
+                        Page 1 of 2
+                    </span>
+
+                </div>
+
+            </footer>
+
+        </section>
+
+        <section class="page">
+
+            <div id="page-two-content"></div>
+
+            <footer class="page-footer">
+
+                <span>
+                    Worker App ID:
+                    <span id="worker-app-id-page-2"></span>
+                </span>
+
+                <div class="footer-right">
+
+                    <span>
+                        Submitted:
+                        <span id="submitted-date-page-2"></span>
+                    </span>
+
+                    <span>
+                        Page 2 of 2
+                    </span>
+
+                </div>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+.demo-navbar {
+    max-width: 8.5in;
+    margin: 0 auto 16px;
+
+    padding: 10px 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.08);
+}
+
+.demo-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.demo-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.demo-actions button {
+    padding: 6px 10px;
+
+    border: 1px solid #b8b8b8;
+    border-radius: 4px;
+
+    background: #ffffff;
+
+    color: #333;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.demo-actions button:hover {
+    background: #f4f4f4;
+}
+
+.demo-actions button.active {
+    background: #222;
+    color: #fff;
+    border-color: #222;
+}
+
+.page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto 30px;
+    padding: 12mm 10mm 18mm;
+    background: white;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.document-header {
+    display: grid;
+    grid-template-columns: 1.2fr 1.3fr 1.5fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.logo-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.wcb-logo {
+    width: 175px;
+    height: auto;
+    display: block;
+}
+
+.address-section p {
+    margin: 0 0 3px;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.title-section h1 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    line-height: 1.1;
+}
+
+.claim-box {
+    display: inline-block;
+    border: 2px solid #111;
+    padding: 7px 10px;
+    font-size: 15px;
+}
+
+.intro-text {
+    margin-top: 25px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#worker-name {
+    color: #254f74;
+}
+
+.expense-section {
+    margin-top: 16px;
+}
+
+.expense-section h2,
+.standalone-heading {
+    margin: 0 0 8px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1.3px solid #111;
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+th {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+td {
+    font-size: 10px;
+    color: #244e75;
+    line-height: 1.2;
+}
+
+.standalone-heading {
+    margin-top: 16px;
+}
+
+.mileage-note {
+    margin: 0 0 8px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+.no-heading-section {
+    margin-top: 0;
+}
+
+.no-heading-section h2 {
+    display: none;
+}
+
+.taxi-note {
+    margin: 0 0 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11px;
+}
+
+.privacy-divider {
+    margin: 28px 0 22px;
+    border: none;
+    border-top: 1px solid #aaa;
+}
+
+.privacy-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.checked-box {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.privacy-link {
+    color: #006dcc;
+    text-decoration: underline;
+}
+
+.page-footer {
+    position: absolute;
+    left: 10mm;
+    right: 10mm;
+    bottom: 8mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 10px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+@media print {
+
+    @page {
+        size: Letter;
+        margin: 0;
+    }
+
+    .demo-navbar {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+
+    .page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+    }
+
+    .page:last-child {
+        page-break-after: auto;
+    }
+}
