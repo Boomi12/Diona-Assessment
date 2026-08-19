@@ -124,16 +124,20 @@ The implementation was reviewed, tested, and adjusted manually against the provi
 
 The prompt history is included in the repository in:
 
-`AI_PROMPT_HISTORY.md`
+[prompt-history/ai-prompts.md](prompt-history/ai-prompts.md)
 
 ## Exercise 1 Walkthrough Video
 
 **Video:**  
-[Add Exercise 1 walkthrough video link here]
+[Watch Exercise 1 Walkthrough Video](Videos/Exercise_1_walkthrough.mp4)
+
+<video src="Videos/Exercise_1_walkthrough.mp4" width="100%" controls></video>
 
 ---
 
 ## Exercise 2 Walkthrough Video
 
 **Video:**  
-[Add Exercise 2 walkthrough video link here]
+[Watch Exercise 2 Walkthrough Video](Videos/Exercise_2_walkthrogh.mp4)
+
+<video src="Videos/Exercise_2_walkthrogh.mp4" width="100%" controls></video>
